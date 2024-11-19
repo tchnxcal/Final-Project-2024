@@ -98,5 +98,13 @@ public class Money
     }
     // ADD LINES FOR TASK #2 HERE
     // Document and write an equals method
+    public boolean equals(Money other) {
+        if (other == null) {
+            return false;
+            // If the parameter 'other' is null, the objects can't be equal, so return false.
+        }
+        return this.dollars == other.dollars && this.cents == other.cents;
+        // Compare the dollars and cents of both objects; return true if both are equal.
+    }
     // Document and write a toString method
 }
