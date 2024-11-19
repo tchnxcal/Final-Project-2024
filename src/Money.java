@@ -28,6 +28,11 @@ public class Money
     }
     // ADD LINES FOR TASK #1 HERE
     // Document and write a copy constructor
+    public Money(Money other) {
+        this.dollars = other.dollars;
+        this.cents = other.cents;
+    } // Creates a new Money object as a copy of an existing object for manipulation
+
     /**
      The add method
      @param otherAmount The amount of money to add.
