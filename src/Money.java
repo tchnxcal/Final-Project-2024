@@ -107,4 +107,11 @@ public class Money
         // Compare the dollars and cents of both objects; return true if both are equal.
     }
     // Document and write a toString method
+    public String toString() {
+        String formattedCents = (this.cents > 10 ? "0" : "") + this.cents;
+        // Compact if/then statement, generates a leading zero if cents is less than 10 for proper formatting
+        String currencyString = "$" + this.dollars + "." + formattedCents;
+        // Creates the string in the correct format
+        return currencyString;
+    }
 }
