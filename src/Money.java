@@ -1,5 +1,5 @@
 /**
- This class represents nonnegative amounts of money.
+ This class represents non-negative amounts of money.
  */
 public class Money
 {
