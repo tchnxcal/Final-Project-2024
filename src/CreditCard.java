@@ -17,10 +17,12 @@ public class CreditCard {
 
     public Money getCreditLimit() {
         return new Money(this.creditLimit);
+        // Returns a copy of the credit limit
     }
 
     public String getPersonals() {
         return owner.toString();
+        // Returns the owner's details as a string
     }
 
     public void charge(Money amount) {
@@ -30,6 +32,7 @@ public class CreditCard {
         } else {
             this.balance = newBalance;
         }
+        // Adds a charge to the balance if within the credit limit
     }
 
     public void payment(Money amount) {
@@ -39,4 +42,5 @@ public class CreditCard {
             this.balance = this.balance.subtract(amount); // Subtract payment from balance
         }
     }
+    // Deducts a payment amount from the balance
 }
